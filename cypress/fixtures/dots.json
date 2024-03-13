@@ -1,0 +1,23 @@
+{
+    "admin": {
+      "dot": "777000",
+      "email": "rahham@demoserver.com",
+      "password": "loadops2025"
+    },
+    "prod_admin": {
+      "dot": "9050",
+      "email": "hammad.rahaman@optym.com",
+      "password": "National@1"
+    },
+    "ninefour": {
+      "dot": "9040",
+      "email": "hammad.rahaman@demoserver.com",
+      "password": "loadops2025"
+    },
+    "altosexpress":{
+        "dot": "128799",
+        "email": "altosexpress@demoserver.com",
+        "password": "loadops2025"
+    }
+  }
+  
