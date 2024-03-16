@@ -23,10 +23,6 @@ describe("The test suite", ()=>{
         cy.createCustomerAPI()
     })
 
-    it("test3", ()=>{
-      cy.createCustomerAPI()
-
-  })
 
   it("Create Location", ()=>{
     cy.generateLocation();
