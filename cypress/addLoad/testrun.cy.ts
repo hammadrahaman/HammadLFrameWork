@@ -28,7 +28,7 @@ describe("The test suite", ()=>{
 
   })
 
-  it.only("Create Location", ()=>{
+  it("Create Location", ()=>{
     cy.generateLocation();
   })
 
