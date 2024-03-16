@@ -94,6 +94,10 @@ Cypress.Commands.add('createCustomerAPI', ()=>{
     }
 })
 
+Cypress.Commands.add("generateLocation", ()=>{
+    generateLocation();
+})
+
 //test example for login
 Cypress.Commands.add('loginx', (dot:string,email:string,password:string )=>{
     cy.session('loginsession', ()=>{

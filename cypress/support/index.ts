@@ -8,6 +8,7 @@ declare namespace Cypress {
         loginx(dot: string, email: string, password: string): Chainable;
         quickStart()
         checkDebug()
+        generateLocation()
       }
       interface ResolvedConfigOptions {
         hideXHRInCommandLog?: boolean;

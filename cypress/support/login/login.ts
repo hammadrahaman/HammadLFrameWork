@@ -33,6 +33,7 @@ export function login(testRole){
             const responseData = loginApiResponse.body;
             const token = responseData.token;
             const orgID = responseData.organizationId;
+            console.log("token", orgID)
             Cypress.env('originitionID', orgID)
             Cypress.env('accessToken', token);
             // to use this it will be Cypress.env('accessToken'); in other file.  and  Cypress.env('originitionID')
