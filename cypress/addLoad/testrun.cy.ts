@@ -28,7 +28,7 @@ describe("The test suite", ()=>{
     cy.generateLocation();
   })
 
-  it.only("add load", ()=>{
+  it("add load", ()=>{
     cy.visit('/')
     cy.checkDebug();
   })
