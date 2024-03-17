@@ -9,7 +9,7 @@ describe("The test suite", ()=>{
         cy.visit('/')
        cy.login('ninefour')
        
-       let int = Cypress.env('accessToken')
+       let int: any = Cypress.env('accessToken');
        cy.log('token: ',int)
     })
 
@@ -26,6 +26,11 @@ describe("The test suite", ()=>{
 
   it("Create Location", ()=>{
     cy.generateLocation();
+  })
+
+  it.only("add load", ()=>{
+    cy.visit('/')
+    cy.checkDebug();
   })
 
 })
