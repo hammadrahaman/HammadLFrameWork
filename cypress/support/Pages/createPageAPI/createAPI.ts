@@ -1,9 +1,12 @@
 /// <reference types="cypress" />
+
+import { any } from "cypress/types/bluebird";
+
 const fake = require( '../fakeFunction.ts/fake')
 
 
 
-export let customer;
+export let customer:string='';
 
 export function customercreateAPI(){
     const customerData= 
@@ -56,6 +59,7 @@ export function customercreateAPI(){
         Cypress.env('customerName', respone.body.name)
         customer = Cypress.env('customerName')
         console.log('customerenv', customer)
+        cy.log(" The name of the customer: ",customer)
     })
 
     }

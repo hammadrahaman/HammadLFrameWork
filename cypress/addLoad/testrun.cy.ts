@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 import { customer } from "../support/Pages/createPageAPI/createAPI";
-import { rctest } from "../addLoad/load";
+
 
 describe("The test suite", () => {
   beforeEach(function () {
@@ -16,15 +16,15 @@ describe("The test suite", () => {
     cy.deleteintegrationAPI();
   });
 
-  it("Create Customer", () => {
+  it.only("Create Customer", () => {
     cy.createCustomerAPI();
   });
 
-  it("Create Location", () => {
+  it.only("Create Location", () => {
     cy.generateLocation();
   });
 
-  it("add load", () => {
+  it.only("add load", () => {
     cy.visit("/");
     cy.checkDebug();
   });

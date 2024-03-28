@@ -33,7 +33,8 @@ import { customercreateAPI } from "./Pages/createPageAPI/createAPI";
 import { testexport } from "./Pages/createPageAPI/test";
 import { generateLocation } from "./Pages/createPageAPI/locationAPI";
 const { faker } = require("@faker-js/faker");
-import { rctest } from "../addLoad/load";
+import { loadCustomer } from "../addLoad/load";
+import {loadStops} from '../addLoad/load';
 
 Cypress.Commands.add("login", (role) => {
   cy.session("loginSession", () => {
@@ -92,7 +93,8 @@ Cypress.Commands.add("deleteCustomer", () => {
   customerDeleteAPI();
 });
 Cypress.Commands.add("checkDebug", () => {
-  rctest();
+    loadCustomer();
+    loadStops()
 });
 Cypress.Commands.add("createCustomerAPI", () => {
   for (let i = 0; i <= 0; i++) {
